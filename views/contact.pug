@@ -1,0 +1,26 @@
+extends base.pug
+
+block scripts 
+  script(src="/static/index.js") 
+block style 
+  style
+      include ../static/contstyle.css
+
+block content
+  section#contactSection
+    h1 Contact Us
+    form(action="/contact" method="POST" id="contactForm")
+      label(for="name") Name:
+      input(type="text", name="name", id="name", required)
+
+      label(for="email") Email:
+      input(type="email", name="email", id="email", required)
+
+      label(for="message") Message:
+      textarea(name="message", id="message", rows="5", required)
+
+      button(type="submit") Send Message
+
+block foot
+  #footer
+    p Copyright 2019 AnkushDance Academy | All Rights Reserved

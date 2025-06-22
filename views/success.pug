@@ -1,0 +1,18 @@
+extends base.pug
+
+block style
+  style
+    include ../static/anistyle.css
+
+block scripts 
+  script(src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous")
+
+block content
+  section#successSection
+    i(class="fas fa-check-circle")
+    h1 Thank You #{name}!
+    p Your message has been successfully sent. We will get back to you soon.
+
+block foot
+  #footer
+    p Copyright 2019 AnkushDance Academy | All Rights Reserved

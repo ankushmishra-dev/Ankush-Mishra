@@ -1,0 +1,62 @@
+doctype html
+html
+  head
+    title Ankush's Dance Academy
+    link(rel="icon", href="../static/logo.png", type="image/x-icon")
+    style
+      include ../static/style.css
+  
+  body
+    nav#navbar
+      img#logo(src="../static/logo.png", alt="error")
+      ul
+        li #[a(href="/") Home]
+        li #[a(href="/about") About]
+        li #[a(href="/services") Services] 
+        li #[a(href="/contact") Contact Us]
+      div#authButtons
+        button#login(onclick="window.location.href='/auth?mode=login'") LOG IN
+        button#sigin(onclick="window.location.href='/auth?mode=signup'") SIGN IN
+
+
+    section#introSection
+      div Welcome to Ankush's Dance Academy
+      div.small Eat Sleep Dance Repeat
+
+    header#h
+      div.h Our Mission
+
+    section#missionSection
+      div.card
+        h3 Dance Perfection
+        div.card-box
+          div.card-img
+            img(src="https://t4.ftcdn.net/jpg/06/67/24/29/240_F_667242977_BujvKN88W22Lmhw31iCkU7vRgnRxmP5T.jpg")
+          div.card-content
+            p This is the best dance academy of the universe
+
+      div.card
+        h3 Dance the way you like
+        div.card-box
+          div.card-img
+            img(src="https://t3.ftcdn.net/jpg/11/09/89/08/240_F_1109890826_hxewl7qULWly8pN8zcxiDkEWUvqFfJ4y.jpg")
+          div.card-content
+            p This is the best dance academy of the universe
+
+      div.card
+        h3 Expert Teaching
+        div.card-box
+          div.card-img
+            img(src="https://t4.ftcdn.net/jpg/13/35/05/93/240_F_1335059339_HHBynQqhWQIN5YLpxXXTEtLlESbD26hk.jpg")
+          div.card-content
+            p This is the best dance academy of the universe
+
+    h2 Our Sponsors
+    div#sponsors
+      img(src="https://www.zarla.com/images/nike-logo-2400x2400-20220504.png?crop=1:1,smart&width=150&dpr=2" alt="Sponsor Image" class="spImage")
+      img(src="https://www.zarla.com/images/apple-logo-2400x2400-20220512.png?crop=1:1,smart&width=150&dpr=2" alt="Sponsor Image" class="spImage")
+      img(src="https://www.zarla.com/images/zarla-chanel-monogram-logo-2400x2400-20240701.png?crop=1:1,smart&width=150&dpr=2" alt="Sponsor Image" class="spImage")
+      img(src="https://www.zarla.com/images/facebook-logo-2400x2400-20220512.png?crop=1:1,smart&width=150&dpr=2" alt="Sponsor Image" class="spImage")
+
+    footer#footer
+      p Copyright © 2019 AnkushAcademy.com | All Rights Reserved

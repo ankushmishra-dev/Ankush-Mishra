@@ -1,0 +1,234 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+#authButtons {
+  display: flex;
+  gap: 10px;
+  margin-right: 20px;
+}
+
+#navbar {
+  background-color: #1f1f1f;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 70px;
+  position: fixed;
+  width: 100%;
+  z-index: 1000;
+}
+
+
+#navbar ul {
+  display: flex;
+  gap: 30px;
+  list-style: none;
+}
+
+#navbar li {
+  list-style: none;
+}
+
+#navbar li a {
+  text-decoration: none;
+  color: white;
+  font-size: 1.1rem;
+  font-weight: 500;
+  font-family: 'Segoe UI', sans-serif;
+  transition: color 0.3s ease, transform 0.2s ease;
+  padding: 10px 15px;
+  border-radius: 8px;
+}
+
+#navbar li a:hover {
+  color: #b99595;
+  background-color: #2a2a2a;
+  transform: translateY(-2px);
+}
+
+#logo {
+  height: 50px;
+  width: 50px;
+  border-radius: 50%;
+  box-shadow: 0 2px 8px rgba(255, 255, 255, 0.1);
+  transition: transform 0.3s ease;
+}
+
+#logo:hover {
+  transform: scale(1.05);
+}
+
+#login,
+#sigin {
+  margin-left: 10px;
+  padding: 8px 15px;
+  background-color: #2a2a2a;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 0.9rem;
+  font-family: 'Segoe UI', sans-serif;
+  transition: background 0.3s ease;
+}
+
+#login:hover,
+#sigin:hover {
+  background-color: #ff5e57;
+}
+
+#introSection {
+  background: 
+              center/cover no-repeat url("https://rhythmandroot.42web.io/wp-content/uploads/2024/06/dynamic-portrait-young-man-woman-dancing-hiphop-isolated-black-background-with-mixed-lights-effect-1-1024x683.jpg");
+  height: 90vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  text-align: center;
+  padding: 20px;
+  padding-top: 100px; 
+  font-family: 'Segoe UI', sans-serif;
+  font-size: 3rem;
+  position: relative;
+}
+
+
+
+
+#introSection div.small {
+  font-size: 1.8rem;
+  font-weight: 400;
+  margin-top: 20px;
+  color: #f0f0f0;
+}
+
+.h{
+    display: flex;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: x-large;
+    background: black;
+    color: aliceblue;
+    width: 216vh;
+    height: 8vh;
+    align-items: center;
+    justify-content: center;
+}
+
+#missionSection {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 20px;
+  background: #1c1c1c;
+  padding: 60px 20px;
+}
+
+.card {
+  background: #2a2a2a;
+  color: #f1f1f1;
+  border-radius: 12px;
+  width: 280px;
+  margin: 20px;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.2);
+  transition: transform 0.3s ease;
+}
+
+.card:hover {
+  transform: translateY(-10px);
+}
+
+.card h3 {
+  text-align: center;
+  font-size: 1.4rem;
+  margin: 20px 0 10px;
+  color: #fefcfc;
+}
+
+.card-box {
+  padding: 10px;
+  text-align: center;
+}
+
+.card-img img {
+  width: 100%;
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+}
+
+.card-content {
+  font-size: 0.95rem;
+  font-style: normal;
+  padding: 10px;
+  line-height: 1.5;
+}
+
+body{
+    background: rgb(60, 59, 59);
+    
+}
+h2 {
+  background-color: transparent;
+  color: #fefdfd;
+  font-size: 2rem;
+  font-family: 'Segoe UI', sans-serif;
+  text-align: center;
+  margin-top: 60px;
+  margin-bottom: 30px;
+  padding: 10px;
+}
+
+#sponsors {
+  display: flex;
+  justify-content: center;
+  align-items: center;       
+  flex-wrap: wrap;        
+  gap: 30px;           
+  padding: 20px;
+  background-color: #111;
+}
+
+.spImage {
+  height: 100px;
+  width: 100px;
+  object-fit: contain;
+  filter: grayscale(100%);
+  transition: all 0.3s ease;
+  border-radius: 10px;
+  background: #fff;
+  padding: 10px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+}
+
+.spImage:hover {
+  filter: grayscale(0%) brightness(1.1);
+  transform: scale(1.1);
+}
+
+#footer {
+  background: linear-gradient(to right, #1f1f1f, #282828);
+  padding: 20px;
+  text-align: center;
+  color: #f1f1f1;
+  font-family: 'Segoe UI', sans-serif;
+  font-size: 14px;
+  border-top: 1px solid #444;
+  box-shadow: 0 -2px 10px rgba(0, 0, 0, 0.3);
+}
+
+#footer p {
+  margin: 0;
+  padding: 10px 0;
+  color: #aaa;
+  letter-spacing: 0.5px;
+  word-spacing: 1px;
+  font-weight: 400;
+  transition: color 0.3s ease;
+}
+
+#footer p:hover {
+  color: #ff5e57;
+}

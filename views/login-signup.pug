@@ -1,0 +1,22 @@
+extends base.pug
+
+block style
+  link(rel="stylesheet", href="/static/auth.css")
+
+block content
+  .auth-container
+    if mode === 'signup'
+      h1 SIGN UP
+      form(action="/signup", method="POST")
+        input(type="text", name="name", placeholder="Name", required)
+        input(type="email", name="email", placeholder="Email", required)
+        input(type="password", name="password", placeholder="Password", required)
+        button(type="submit") Create Account
+    else
+      h1 LOGIN
+      if error === 'invalid'
+        p(style="color: red") Invalid email or password.
+      form(action="/login", method="POST")
+        input(type="email", name="email", placeholder="Email", required)
+        input(type="password", name="password", placeholder="Password", required)
+        button(type="submit") Log In

@@ -1,0 +1,25 @@
+html 
+  head
+    title Ankush's Dance Academy
+    link(rel="icon", href="/static/logo.png", type="image/x-icon")
+    link(rel="stylesheet", href="/static/style.css")
+    block scripts 
+    block style 
+
+  body
+    nav#navbar
+      img#logo(src="../static/logo.png", alt="error")
+      ul
+        li #[a(href="/") Home]
+        li #[a(href="/about") About]
+        li #[a(href="/services") Services]
+        li #[a(href="/contact") Contact Us]
+      div#authButtons
+        button#login(onclick="window.location.href='/auth?mode=login'") LOG IN
+        button#sigin(onclick="window.location.href='/auth?mode=signup'") SIGN IN
+
+
+
+    block content
+
+    block foot
