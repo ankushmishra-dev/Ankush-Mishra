@@ -232,3 +232,27 @@ h2 {
 #footer p:hover {
   color: #ff5e57;
 }
+/* For screens smaller than 600px (mobile) */
+@media (max-width: 600px) {
+  #navbar {
+    flex-direction: column;
+    height: auto;
+    padding: 10px;
+  }
+
+  #navbar ul {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .intro {
+    font-size: 1.2rem;
+    text-align: center;
+    padding: 10px;
+  }
+
+  img {
+    width: 100%;
+    height: auto;
+  }
+}
